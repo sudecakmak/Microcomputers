@@ -1,5 +1,5 @@
 # Microcomputers
-Projects I made in Introduction to Microcomputers. I use MPLAB X IDE v5.20 for my projects.
+Projects I made in Introduction to Microcomputers. I used MPLAB X IDE v5.20 for my projects.
 
 I am going to use PIC16F877A microcomputer.
 
