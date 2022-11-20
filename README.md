@@ -1,18 +1,33 @@
 # Microcomputers
 Projects I made in Introduction to Microcomputers. I used MPLAB X IDE v5.20 for my projects.
 
-I am going to use PIC16F877A microcomputer.
+I am going to use **PIC16F877A**.
 
-I write my codes in assembly. The C coded version of my programs are showing in the pictures.
+I write my codes in *assembly*. The C coded version of my programs are showing in the pictures.
 
-# Arithmetic and Logical instructions of PIC16F877A 
+## Table of Contents
+
+- [Microcomputer](#microcomputer)
+- [Microcontroller](#microcontroller)
+- [Arithmetic and Logical instructions](#arithmetic-and-logical-instructions)
+- [Conditional expressions](#conditional-expressions)
+- [Loops and Delay functions](#loops-and-delay-functions)
+
+# Microcomputer
+A microcomputer is a complete computer on a small scale, designed for use by one person at a time. An antiquated term, a microcomputer is now primarily called a personal computer (PC), or a device based on a single-chip microprocessor. Common microcomputers include laptops and desktops. Beyond standard PCs, microcomputers also include some calculators, mobile phones, notebooks, workstations and embedded systems.
+
+# Microcontroller
+A microcontroller (MCU) is an integrated circuit that combines CPU, program and data memory, EEPROM, Timers, several GPIO ports, communication interfaces such as UART, USB, I2C, SPI, CAN etc. into a single chip, and is programmed to do a specific task.
+
+
+# Arithmetic and Logical instructions
 
 The program shows below arithmetic expression how to write in assembly.
 
 ![Screenshot 2022-10-23 132934](https://user-images.githubusercontent.com/102357822/197387101-b85b6fdc-0fe2-48b4-b2d5-bbdb0364458b.png)
 
 
-# Conditional expressions in PIC16F877A
+# Conditional expressions
 
 The program shows which of the boxes shown in the figure will be in the region where the written x and y values are located.
 
@@ -21,7 +36,7 @@ The program shows which of the boxes shown in the figure will be in the region w
 ![Screenshot 2022-10-29 135217](https://user-images.githubusercontent.com/102357822/198827365-df3acbf9-7109-4f82-af9c-9dd9b3cafb60.png)
 
 
-# Loops and Delay functions in PIC16F877A
+# Loops and Delay functions
 
 Program display each and every Zibonacci number from 2 to 13 within the while loop on the LEDs, and waits for the user to press Button3 (RB3 on PICSIM) to move on to the next iteration of the loop. Also makes a 250ms delay before checking if the button is pressed and moves on to the next iteration of the loop.
 
