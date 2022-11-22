@@ -14,10 +14,10 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Loops and Delay functions](#loops-and-delay-functions)
 
 # Microcomputer
-A microcomputer is a complete computer on a small scale, designed for use by one person at a time. An antiquated term, a microcomputer is now primarily called a personal computer (PC), or a device based on a single-chip microprocessor. Common microcomputers include laptops and desktops. Beyond standard PCs, microcomputers also include some calculators, mobile phones, notebooks, workstations and embedded systems.
+> A microcomputer is a complete computer on a small scale, designed for use by one person at a time. An antiquated term, a microcomputer is now primarily called a personal computer (PC), or a device based on a single-chip microprocessor. Common microcomputers include laptops and desktops. Beyond standard PCs, microcomputers also include some calculators, mobile phones, notebooks, workstations and embedded systems.
 
 # Microcontroller
-A microcontroller (MCU) is an integrated circuit that combines CPU, program and data memory, EEPROM, Timers, several GPIO ports, communication interfaces such as UART, USB, I2C, SPI, CAN etc. into a single chip, and is programmed to do a specific task.
+> A microcontroller (MCU) is an integrated circuit that combines CPU, program and data memory, EEPROM, Timers, several GPIO ports, communication interfaces such as UART, USB, I2C, SPI, CAN etc. into a single chip, and is programmed to do a specific task.
 
 
 # Arithmetic and Logical instructions
