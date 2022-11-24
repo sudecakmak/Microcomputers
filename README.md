@@ -12,6 +12,8 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Arithmetic and Logical instructions](#arithmetic-and-logical-instructions)
 - [Conditional expressions](#conditional-expressions)
 - [Loops and Delay functions](#loops-and-delay-functions)
+- [Function calls and Indirect addressing](#function-calls-and-indirect-addressing)
+
 
 # Microcomputer
 > A microcomputer is a complete computer on a small scale, designed for use by one person at a time. An antiquated term, a microcomputer is now primarily called a personal computer (PC), or a device based on a single-chip microprocessor. Common microcomputers include laptops and desktops. Beyond standard PCs, microcomputers also include some calculators, mobile phones, notebooks, workstations and embedded systems.
@@ -41,3 +43,10 @@ The program shows which of the boxes shown in the figure will be in the region w
 Program display each and every Zibonacci number from 2 to 13 within the while loop on the LEDs, and waits for the user to press Button3 (RB3 on PICSIM) to move on to the next iteration of the loop. Also makes a 250ms delay before checking if the button is pressed and moves on to the next iteration of the loop.
 
 ![Screenshot 2022-11-10 153821](https://user-images.githubusercontent.com/102357822/201094028-4532e19b-734b-4564-9c78-83d1ba348d35.png)
+
+
+# Function calls and Indirect addressing
+
+Consider an arbitrary number generator function GenerateNumbers that takes 3 arguments, x, y and N, and generates some arbitrary numbers in a loop, and stores these numbers in an array. It then returns the total number of elements generated and stored in the array. You then write another function AddNumbers that adds the numbers in the array and returns their sum. Finally, you write a function DisplayNumbers that first displays the sum and then the first 5 numbers in the array one after the other as the user presses Button3 connected to PORTB3 (RB3 on PICSIM). 
+
+![Screenshot 2022-11-25 014056](https://user-images.githubusercontent.com/102357822/203871179-9172e4eb-cdc8-45e8-a492-d68bdac4b80a.png)
