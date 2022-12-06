@@ -13,6 +13,7 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Conditional expressions](#conditional-expressions)
 - [Loops and Delay functions](#loops-and-delay-functions)
 - [Function calls and Indirect addressing](#function-calls-and-indirect-addressing)
+- [Led](#led)
 
 
 # Microcomputer
@@ -54,3 +55,11 @@ You then write another function AddNumbers that adds the numbers in the array an
 You write a function DisplayNumbers that first displays the sum and then the first 5 numbers in the array one after the other as the user presses Button3 connected to PORTB3 (RB3 on PICSIM). 
 
 ![Screenshot 2022-11-25 014056](https://user-images.githubusercontent.com/102357822/203871179-9172e4eb-cdc8-45e8-a492-d68bdac4b80a.png)
+
+# Led
+
+The idea is to walk over the LEDs first from the right to the left lighting up one LED at a time. When we have reached the last LED, we change direction and start walking to the right until we reach the first LED. This completes a cycle. When the cycle is completed, we flash the LEDs twice.
+
+![Screenshot 2022-12-06 121602](https://user-images.githubusercontent.com/102357822/205870407-8c2a0460-31d3-426a-a36e-cb32358879bf.png)
+
+
