@@ -14,6 +14,7 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Loops and Delay functions](#loops-and-delay-functions)
 - [Function calls and Indirect addressing](#function-calls-and-indirect-addressing)
 - [Led](#led)
+- [Seven Segment Display](#seven-segment-display)
 
 
 # Microcomputer
@@ -56,10 +57,25 @@ You write a function DisplayNumbers that first displays the sum and then the fir
 
 ![Screenshot 2022-11-25 014056](https://user-images.githubusercontent.com/102357822/203871179-9172e4eb-cdc8-45e8-a492-d68bdac4b80a.png)
 
+
 # Led
 
 The idea is to walk over the LEDs first from the right to the left lighting up one LED at a time. When we have reached the last LED, we change direction and start walking to the right until we reach the first LED. This completes a cycle. When the cycle is completed, we flash the LEDs twice.
 
 ![Screenshot 2022-12-06 121602](https://user-images.githubusercontent.com/102357822/205870407-8c2a0460-31d3-426a-a36e-cb32358879bf.png)
+
+# Seven Segment Display
+
+
+The goal of this lab is to make use of the Seven Segment Displays (SSD) connected to PORTD of PIC16F877A on PICSIM. Recall that the SSD to be lit up is first selected by making its selection bit A2-A5 HIGH. Thus, to display a value on the first SSD (DIS4 on PICSIM), we first set A5 to logical 1 (HIGH), and then write the appropriate value corresponding to the number to be displayed to PORTD. The bit sequence necessary to display each number was discussed in class.  
+
+You are asked to implement a simple counter that starts at 0 and counts up to decimal 20. When your counter reaches 20, it goes back 0 and counts up again. You counter must increment every second.
+
+The most important thing in implementing this project is to avoid flicker on the SSDs. Notice that you will be displaying a two digit number, i.e., you will be displaying a value on the first and second SSDs (DIS3 & DIS4 on PICSIM). To display the counter, make sure that you select and display the first digit on the first SSD (DIS4). Then wait for 5ms so that the LEDs on the first SSD light up completely. Then select the second SSD (DIS3) and display the second digit on the second SSD. Again wait for 5ms to make the LEDs on the second SSD to light up completely. 
+
+So far you displayed the two digit number on both SSDs and spent about 10ms. Before you increment your counter, you need to wait for another 980ms. If you simply wait for 980ms in an idle loop now, your first SSD will turn off and you will not be able to see the first digit anymore! To avoid this problem, write a display loop that iterates for some number of iterations (NO_ITERATIONS). Within the loop, display the first digit and wait for 5ms. Then display the second digit and wait for 5ms. Thus, the two digit number will be visible on the SSDs all the time. When the loop terminates, you have spent about 1000ms, i.e., 1 second. You can increment your counter and go back to the beginning of the main loop to display this number. Make sure that after your counter reaches 20, it rolls back to 0 and counts up from there.
+
+
+![Screenshot 2022-12-09 235906](https://user-images.githubusercontent.com/102357822/206802259-4f93d59c-4432-47e0-a53b-493f5897c689.png)
 
 
