@@ -15,6 +15,7 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Function calls and Indirect addressing](#function-calls-and-indirect-addressing)
 - [Led](#led)
 - [Seven Segment Display](#seven-segment-display)
+- [LCD](#lcd)
 
 
 # Microcomputer
@@ -77,5 +78,18 @@ So far you displayed the two digit number on both SSDs and spent about 10ms. Bef
 
 
 ![Screenshot 2022-12-09 235906](https://user-images.githubusercontent.com/102357822/206802259-4f93d59c-4432-47e0-a53b-493f5897c689.png)
+
+
+# LCD
+
+Counter value starts at 0, increments every second by 1 up to 20 and then rolls over back to 0. On the first line of the LCD displays two digits. For example, if the counter value is 12, then the first line must show “Counter Val: 12”. The second line of the LCD will show the message “Counting up…” if the counter is less than or equal to 20. When the counter rolls over from 20 to 0, the counter value will display 00, and the second line will show “Rolled over to 0”. At the next increment, you then show “Counting up…” as usual.
+
+![Screenshot 2022-12-18 144753](https://user-images.githubusercontent.com/102357822/208296669-1c80e477-f948-41d8-a86c-51149bbae837.png)
+
+## Output
+
+![Screenshot 2022-12-17 153718](https://user-images.githubusercontent.com/102357822/208296332-1ee9a359-c2f5-4666-8dbf-1d676b9dd1d0.png)
+
+![Screenshot 2022-12-17 153653](https://user-images.githubusercontent.com/102357822/208296328-6e4e488b-eaf3-4aa4-bce8-6b7ee695102d.png)
 
 
