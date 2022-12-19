@@ -16,7 +16,7 @@ I write my codes in *assembly*. The C coded version of my programs are showing i
 - [Led](#led)
 - [Seven Segment Display](#seven-segment-display)
 - [LCD](#lcd)
-
+- [Implementing a Counter Using Buttons](#implementing-a-counter-using-buttons)
 
 # Microcomputer
 > A microcomputer is a complete computer on a small scale, designed for use by one person at a time. An antiquated term, a microcomputer is now primarily called a personal computer (PC), or a device based on a single-chip microprocessor. Common microcomputers include laptops and desktops. Beyond standard PCs, microcomputers also include some calculators, mobile phones, notebooks, workstations and embedded systems.
@@ -92,4 +92,19 @@ Counter value starts at 0, increments every second by 1 up to 20 and then rolls 
 
 ![Screenshot 2022-12-17 153653](https://user-images.githubusercontent.com/102357822/208296328-6e4e488b-eaf3-4aa4-bce8-6b7ee695102d.png)
 
+# Implementing a Counter Using Buttons
+
+A simple counter that can be incremented, decremented or reset to 0 using 3 buttons connected to pins 3, 4 and 5 of PORTB. The counter will start at 0 and go up to 9. If the counter is incremented when its value is 9, it will roll over to 0. If the counter is decremented when its value is 0, it will go back to 9. Any time the reset button is pressed, the value of the counter becomes 0.
+
+The first button (the button connected to PORTB3) will be used to increment the counter.
+The second button (the button connected to PORTB4) will be used to decrement the counter.
+The third button (the button connected to PORTB5) will be used to reset the counter.
+The value of the counter will be displayed on the first SSD on the experiment board.
+
+![Screenshot 2022-12-19 183823](https://user-images.githubusercontent.com/102357822/208463812-bbe1fc13-56cb-488e-8eff-128bbdc3a7ff.png)
+
+
+## Output
+
+![ezgif-4-12d7526a66](https://user-images.githubusercontent.com/102357822/208464968-4dd0b31c-78e7-46d3-b750-dbd9bf44ed4d.gif)
 
